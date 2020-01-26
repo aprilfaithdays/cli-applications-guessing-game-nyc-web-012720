@@ -11,9 +11,9 @@ def get_user_input
 end
 
 def run_guessing_game
-  num = random_num.to_i
+  num = random_num
   prompt_user
-  guess = get_user_input
+  guess = get_user_input.to_s
   
   if guess == num
     feedback =  'You guessed the correct number!'
